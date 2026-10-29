@@ -69,8 +69,64 @@
                 </div>
 
                 <div class="abb-footer-v7-link-list">
+                    <?php
+// 1. Get the menu items array based on your theme location
+$locations = get_nav_menu_locations();
+$menu_id   = isset($locations['primary']) ? $locations['primary'] : 0; 
+$menu_items = wp_get_nav_menu_items( $menu_id );
 
-                    <a href="index.html">
+if ( $menu_items ) {
+    
+    // Loop through every item in the menu
+    foreach ( $menu_items as $item ) {
+        
+        $print_title = $item->title;
+        $print_url   = $item->url;
+        $first_child = null;
+
+
+        // ==========================================
+        // SKIP LOGIC 1: Skip if it's a child item
+        // ==========================================
+        if ( $item->menu_item_parent != 0 ) {
+            continue; // Don't print sub-items in the main list
+        }
+
+        if($item->title == 'Projects' || $item->title == 'projects'){
+            continue;
+        }
+
+        
+
+        // 2. Search the menu to see if THIS item has a first child
+        foreach ( $menu_items as $potential_child ) {
+            if ( $potential_child->menu_item_parent == $item->ID ) {
+                $first_child = $potential_child;
+                break; // We found the first child, stop searching
+            }
+        }
+
+        // 3. If a child was found, use the child's data instead
+        if ( $first_child ) {
+            $print_title = $item->title;
+            $print_url   = $first_child->url;
+        }
+
+        // 4. Print the link (either the child's data or the parent's own data)
+        ?>
+        <a href="<?php echo esc_url( $print_url ); ?>">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span><?php echo esc_html( $print_title ); ?></span>
+        </a>
+        <?php
+        
+    }
+}
+?>
+
+ 
+
+                    <!-- <a href="index.html">
                         <i class="fa-solid fa-arrow-right"></i>
                         <span>Home</span>
                     </a>
@@ -94,7 +150,7 @@
                     <a href="arun-bhandary-builders-contact-us.html">
                         <i class="fa-solid fa-arrow-right"></i>
                         <span>Contact</span>
-                    </a>
+                    </a> -->
 
                 </div>
 
@@ -123,7 +179,7 @@ if ( $menu_items ) {
     // 2. Find the Parent Item (e.g., "Sample Page")
     foreach ( $menu_items as $item ) {
         // You can match by title, or by the object_id (the page ID)
-        if ( $item->title === 'Projects' ||  ) { 
+        if ( $item->title === 'Projects' || $item->title === 'projects' ) { 
             $parent_id = $item->ID;
             break;
         }
@@ -1441,4 +1497,4 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 <?php wp_footer(); ?>
 </body>
-</htm
+</html>
