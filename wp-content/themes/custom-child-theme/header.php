@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <title><?php echo get_the_title(); ?> | Arun Bhandary Builders & Developers</title>
+         <title>
+            
+            <?php 
+                if(is_front_page()){
+                    echo 'Arun Bhandary Builders & Developers';
+                }else {
+                    echo get_the_title().' | Arun Bhandary Builders & Developers';
+                }
+            ?>
+            </title>
      <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon.png">
     <meta name="theme-color" content="#27872e" >
     <link rel="stylesheet" href="css/bootstrap.min.css">

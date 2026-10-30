@@ -21125,7 +21125,7 @@ button {
     position: relative;
     z-index: 4;
 
-    max-width: 570px;
+    max-width: 450px;
 
     margin-top: 38px;
 
@@ -28439,7 +28439,7 @@ button {
     box-shadow: 0 10px 30px rgba(16, 40, 61, .07);
 }
 
-.ab-map-frame {
+.ab-map-frame, .ab-map-card > iframe {
     display: block;
     width: 100%;
     height: 430px;
@@ -28461,7 +28461,7 @@ button {
 }
 
 @media (max-width: 767.98px) {
-    .ab-map-frame {
+    .ab-map-frame, .ab-map-card > iframe {
         height: 320px;
     }
 
@@ -28478,6 +28478,7 @@ button {
     border: 1px solid var(--ab-border);
     background: var(--ab-white);
     transition: .25s;
+    text-transform: capitalize;
 }
 
 .ab-amenity:hover { border-color: var(--ab-red); }

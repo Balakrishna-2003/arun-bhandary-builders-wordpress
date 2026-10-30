@@ -245,10 +245,16 @@ if ( $menu_items ) {
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
 
-                    <p>
+                    <!-- <p>
                         Dejama Complex,<br>
                         Swamila Padavu Bajpe,<br>
                         Mangalore - 574142
+                    </p> -->
+                    <p>
+                        <strong>Arun Bhandary Builders</strong>~<br>
+                        Opposite Primary Health Care,<br>
+                        Bejai, Grace Towers, <br>
+                        Ground Floor, Mangaluru - 575004
                     </p>
 
                 </div>
