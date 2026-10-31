@@ -458,9 +458,12 @@ if ( $menu_items ) {
                     </div>
 
 
-                    <form id="abbEnquiryForm">
+                    <?php 
+                    add_filter('wpcf7_autop_or_not', '__return_false');
+                    echo do_shortcode('[contact-form-7 id="4d8f9d2" title="Footer Enquiry Form"]'); ?>
+                    <!-- <form id="abbEnquiryForm"> -->
 
-                        <div class="row g-3">
+                        <!-- <div class="row g-3">
 
                             <div class="col-md-6">
 
@@ -474,6 +477,21 @@ if ( $menu_items ) {
                                     name="name"
                                     class="form-control"
                                     placeholder="Your name"
+                                    required>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <label for="abbName">
+                                    E-Mail
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="abbName"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="Your E-Mail"
                                     required>
 
                             </div>
@@ -496,7 +514,7 @@ if ( $menu_items ) {
                             </div>
 
 
-                            <div class="col-12">
+                            <div class="col-6">
 
                                 <label for="abbRequirement">
                                     I'm Interested In
@@ -571,9 +589,9 @@ if ( $menu_items ) {
 
                             </div>
 
-                        </div>
+                        </div> -->
 
-                    </form>
+                    <!-- </form> -->
 
                 </div>
 

@@ -124,7 +124,7 @@
                     </h3>
 
 
-                    <!-- Address -->
+                    <!-- Address - Bajpe -->
 
                     <div class="acx3-detail">
 
@@ -138,14 +138,45 @@
                         <div>
 
                             <div class="acx3-detail-label">
-                                Office Address
+                                Office Address - Bajpe
+                            </div>
+
+                            <div class="acx3-detail-value">
+                                <strong>Arun Bhandary Builders & Developers Pvt Ltd</strong><br>
+                                Dejama Complex,<br>
+                                Swamila Padavu Bajpe,<br>
+                                Mangalore - 574142
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Address - Bejai -->
+
+                    <div class="acx3-detail">
+
+                        <div class="acx3-detail-icon">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <div class="acx3-detail-label">
+                                Office Address - Bejai
                             </div>
 
                             <div class="acx3-detail-value">
 
-                                Dejama Complex,<br>
-                                Swamila Padavu Bajpe,<br>
-                                Mangalore - 574142
+                                <strong>Arun Bhandary Builders,</strong><br>
+                                Opposite Primary Health Care,<br>
+                                Bejai, Grace Towers,<br>
+                                Ground Floor, Mangaluru - 575004
 
                             </div>
 
@@ -234,7 +265,7 @@
                 <div class="acx3-map">
 
                     <iframe
-                        src="https://www.google.com/maps?q=Dejama%20Complex%2C%20Swamila%20Padavu%2C%20Bajpe%2C%20Mangalore%2C%20Karnataka%20574142&output=embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.9330783158013!2d74.88486021590049!3d12.98896554020459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba356b071988871%3A0x7b4904847f2b7545!2sArun%20Bhandary%20Builders%20%26%20Developers%20Private%20Limited!5e0!3m2!1sen!2sin!4v1793471225731!5m2!1sen!2sin"
                         loading="lazy"
                         allowfullscreen
                         referrerpolicy="no-referrer-when-downgrade">

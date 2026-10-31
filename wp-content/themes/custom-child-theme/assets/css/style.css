@@ -26642,6 +26642,10 @@ button {
     color: var(--acx3-red);
 }
 
+.acx3-detail-value > strong {
+    font-size: 20px !important;
+}
+
 
 /* =========================================================
            GOOGLE MAP

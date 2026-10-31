@@ -30,21 +30,25 @@
 
 .wpcf7 form.sent .wpcf7-response-output {
   border-color: #46b450; /* Green */
+  color: #46b450;
 }
 
 .wpcf7 form.failed .wpcf7-response-output,
 .wpcf7 form.aborted .wpcf7-response-output {
   border-color: #dc3232; /* Red */
+  color: #dc3232;
 }
 
 .wpcf7 form.spam .wpcf7-response-output {
   border-color: #f56e28; /* Orange */
+  color: #f56e28;
 }
 
 .wpcf7 form.invalid .wpcf7-response-output,
 .wpcf7 form.unaccepted .wpcf7-response-output,
 .wpcf7 form.payment-required .wpcf7-response-output {
   border-color: #ffb900; /* Yellow */
+  color: #ffb900;
 }
 
 .wpcf7-form-control-wrap {
@@ -64,6 +68,7 @@
   left: 1em;
   z-index: 100;
   border: 1px solid #dc3232;
+  color: black;
   background: #fff;
   padding: 0.2em 0.8em;
   width: 24em;
