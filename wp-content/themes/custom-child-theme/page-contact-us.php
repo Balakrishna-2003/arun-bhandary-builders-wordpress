@@ -1,6 +1,7 @@
 <?php
     /*Template Name: Contact Us Template */
     get_header();
+    add_filter('wpcf7_autop_or_not', '__return_false');
 ?>
 <article>
     <!-- =========================================================
@@ -325,186 +326,11 @@
                     </p>
 
 
-                    <form>
+                    <!-- <form> -->
 
-                        <div class="row g-3">
+                        <?php the_content(); ?>                        
 
-
-                            <!-- Name -->
-
-                            <div class="col-md-6">
-
-                                <div class="acx3-field">
-
-                                    <label
-                                        for="acx3Name"
-                                        class="acx3-label"
-                                    >
-                                        Name
-                                    </label>
-
-                                    <input
-                                        type="text"
-                                        id="acx3Name"
-                                        class="acx3-input"
-                                        placeholder="Your name"
-                                        required
-                                    >
-
-                                </div>
-
-                            </div>
-
-
-                            <!-- Phone -->
-
-                            <div class="col-md-6">
-
-                                <div class="acx3-field">
-
-                                    <label
-                                        for="acx3Phone"
-                                        class="acx3-label"
-                                    >
-                                        Phone
-                                    </label>
-
-                                    <input
-                                        type="tel"
-                                        id="acx3Phone"
-                                        class="acx3-input"
-                                        placeholder="Your phone number"
-                                        required
-                                    >
-
-                                </div>
-
-                            </div>
-
-
-                            <!-- Email -->
-
-                            <div class="col-md-6">
-
-                                <div class="acx3-field">
-
-                                    <label
-                                        for="acx3Email"
-                                        class="acx3-label"
-                                    >
-                                        Email
-                                    </label>
-
-                                    <input
-                                        type="email"
-                                        id="acx3Email"
-                                        class="acx3-input"
-                                        placeholder="Your email address"
-                                    >
-
-                                </div>
-
-                            </div>
-
-
-                            <!-- Interest -->
-
-                            <div class="col-md-6">
-
-                                <div class="acx3-field">
-
-                                    <label
-                                        for="acx3Interest"
-                                        class="acx3-label"
-                                    >
-                                        Interested In
-                                    </label>
-
-                                    <select
-                                        id="acx3Interest"
-                                        class="acx3-select"
-                                    >
-
-                                        <option value="">
-                                            Select an option
-                                        </option>
-
-                                        <option>
-                                            Layout / Plot
-                                        </option>
-
-                                        <option>
-                                            Custom Home Construction
-                                        </option>
-
-                                        <option>
-                                            House / Villa
-                                        </option>
-
-                                        <option>
-                                            Loan Assistance
-                                        </option>
-
-                                        <option>
-                                            Joint Venture
-                                        </option>
-
-                                        <option>
-                                            Other
-                                        </option>
-
-                                    </select>
-
-                                </div>
-
-                            </div>
-
-
-                            <!-- Message -->
-
-                            <div class="col-12">
-
-                                <div class="acx3-field">
-
-                                    <label
-                                        for="acx3Message"
-                                        class="acx3-label"
-                                    >
-                                        Message
-                                    </label>
-
-                                    <textarea
-                                        id="acx3Message"
-                                        class="acx3-input acx3-textarea"
-                                        placeholder="Write your requirement..."
-                                    ></textarea>
-
-                                </div>
-
-                            </div>
-
-
-                            <!-- Submit -->
-
-                            <div class="col-12">
-
-                                <button
-                                    type="submit"
-                                    class="acx3-submit"
-                                >
-
-                                    Submit Enquiry
-
-                                    <i class="fa-solid fa-arrow-right ms-2"></i>
-
-                                </button>
-
-                            </div>
-
-
-                        </div>
-
-                    </form>
+                    <!-- </form> -->
 
                 </div>
 

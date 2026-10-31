@@ -990,3 +990,15 @@ function format_indian_price( $price_string ) {
 
     return '₹' . $val . $suffix;
 }
+
+
+
+
+/*Contact form custom email instead of the wordpress@doman.com */
+add_filter('wp_mail_from', function ($email) {
+    return 'yourname@yourdomain.com';
+});
+
+add_filter('wp_mail_from_name', function ($name) {
+    return get_bloginfo('name');
+});
