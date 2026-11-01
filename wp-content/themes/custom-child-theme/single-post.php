@@ -86,7 +86,7 @@ $gallery = get_post_meta($post_id, '_prop_gallery', true);
                             $rest_of_title = $words[0];
                             $last_word = '';
                         }
-                        echo ',', $address;
+                        // echo ',', $address;
                         ?>
                     </h1>
 
